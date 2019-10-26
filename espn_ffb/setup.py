@@ -13,7 +13,8 @@ def parse_args() -> Mapping:
 
     :return: dict of parsed arguments
     """
-    parser = argparse.ArgumentParser(description="Create tables and insert into database.")
+    parser = argparse.ArgumentParser(
+        description="Create tables and insert into database.")
     parser.add_argument('-e', '--environment', help="The development environment", type=str, required=True,
                         choices=util.SUPPORTED_ENVIRONMENTS)
     return vars(parser.parse_args())

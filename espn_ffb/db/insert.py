@@ -7,8 +7,8 @@ from espn_ffb.db.model.owners import Owners
 from espn_ffb.db.model.records import Records
 from espn_ffb.db.model.sackos import Sackos
 from espn_ffb.db.model.teams import Teams
-from espn_ffb.espn import api
-from espn_ffb.espn.model.league_setting import LeagueSetting
+from espn_ffb.sleeper import api
+from espn_ffb.sleeper.model.league_setting import LeagueSetting
 from flask import Flask
 import logging
 from sqlalchemy import desc, func
